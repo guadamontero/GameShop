@@ -1,3 +1,3 @@
 # GameShop
 
-##Lenguajes utilizados: HTML y CSS
+## Lenguajes utilizados: HTML y CSS
