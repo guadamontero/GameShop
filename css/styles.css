@@ -66,6 +66,12 @@ ul {
   font-size: 1.3rem;
 }
 
+.menu-hamburguesa {
+  color: #f3f3f3;
+  font-size: 2em;
+  display: none;
+}
+
 /* ---------MAIN--------- */
 
 main h2 {
@@ -126,6 +132,8 @@ main h2 {
   display: flex;
   justify-content: space-evenly;
   padding: 0 5rem;
+  flex-wrap: wrap;
+  gap: 35px;
 }
 
 .card {
@@ -234,4 +242,95 @@ main h2 {
 
 /* ---------MEDIAS-QUERIES--------- */
 
+@media screen and (max-width: 650px) {
+
+  header {
+    padding-right: 0;
+  }
+
+  nav, .carrito{
+    display: none;
+  }
+
+  .menu-hamburguesa {
+    display: inline;
+  }
+
+  .banner-container {
+    padding: 0 3.5rem;
+  }
+
+  .banner-container h2{
+    font-weight: 700;
+  }
+
+  .card-container {
+    gap: 35px;
+  }
+
+  .productos-estrella-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+  }
+
+  .productos {
+    width: 50vw;
+    height: 30vh;
+  }
+
+  .productos p {
+    padding-right: 25px;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    justify-content: center;
+    gap: 35px;
+    padding: 1.5rem 6rem;
+  }
+}
+
 /* ---------MOBILE--------- */
+@media screen and (max-width: 480px) {
+
+  nav, .carrito{
+    display: none;
+  }
+
+  .banner-container {
+    padding: 0 3.5rem;
+  }
+
+  .banner-container h2{
+    font-weight: 700;
+  }
+
+  .card-container {
+    flex-direction: column;
+    gap: 35px;
+    flex-wrap: wrap;
+  }
+
+  .productos-estrella-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+  }
+
+  .productos {
+    width: 70vw;
+    height: 30vh;
+  }
+
+  .productos p {
+    padding-right: 25px;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    justify-content: center;
+    gap: 35px;
+    padding: 1.5rem 6rem;
+  }
+}
